@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React.js-intro</title>
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- tailwind css -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!--flickitry CSS -->
+    <link rel="stylesheet" href="Flickity/flickity.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <div class="container mx-auto p-0 flex-col md:flex-row items-center">
+                <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                    <img class="logo" src="imgs/pngaaa.com-2507875.png" alt="">
+                    <h1><span class="ml-3 mt-12 text-xl">React</span></h1>
+                </a>
+                <button class="buton" type="button">
+                    <h2> <i class="fas fa-bookmark"></i> Topics</h2>
+                </button>
+            </div>
+        </header>
+
+        <div class="carousel" data-flickity='{ "autoPlay": true }'>
+            <div class="carousel-cell">
+                <div style="display: flex; justify-content: space-between;" class="text">
+                    <h1 class="heading">1) WHAT IS REACT</h1>
+                    <button onclick="btn1()" class="butn" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <h2>More <i class="fas fa-ellipsis-v"></i> </h2>
+                    </button>
+                </div>
+                <p class="para">React is a declarative, efficient, and flexible JavaScript library for building user
+                    interfaces. It lets you compose complex UIs from small and isolated pieces of code called
+                    “components”. We'll get to the funny XML-like tags soon. We use components to tell React what we
+                    want to see on the screen.</p>
+                <div class="image ">
+                    <img src="imgs/img1.png" alt="">
+                </div>
+
+            </div>
+            <div class="carousel-cell">
+                <div style="display: flex; justify-content: space-between;" class="text">
+                    <h1 class="heading">2) What is Single Page App </h1>
+                    <button onclick="btn2()" class="butn" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <h2>More <i class="fas fa-ellipsis-v"></i> </h2>
+                    </button>
+                </div>
+                <p class="para">SPA wins in terms of speed and code reusability, which can be applied to develop your
+                    mobile app, but it has deficiencies in SEO optimization. Using an MPA will help you rank higher
+                    in Google and is more scalable but much slower than SPA's.</p>
+                <div class="image ">
+                    <img src="imgs/img2.jpg" alt="">
+                </div>
+
+            </div>
+            <div class="carousel-cell">
+                <div style="display: flex; justify-content: space-between;" class="text">
+                    <h1 class="heading">3) Angular Vs React </h1>
+                    <button onclick="btn3()" class="butn" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <h2>More <i class="fas fa-ellipsis-v"></i> </h2>
+                    </button>
+                </div>
+                <p class="para">AngularJS is a structural framework for developing dynamic web apps, whereas React is a
+                    javascript library that allows you to build UI components. Angular JS is based on MVC (Model View
+                    Controller) whereas React is based on Virtual DOM. Angular is based on Typescript and React is based
+                    on Javascript.</p>
+                <div class="image ">
+                    <img src="imgs/img3.png" alt="">
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div style="display: flex; justify-content: space-between;" class="text">
+                    <h1 class="heading">4) Library Vs Framework </h1>
+                    <button onclick="btn4()" class="butn" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <h2>More <i class="fas fa-ellipsis-v"></i> </h2>
+                    </button>
+                </div>
+                <p class="para">A library performs specific, well-defined operations. A framework is a skeleton where
+                    the application defines the "meat" of the operation by filling out the skeleton. The skeleton still
+                    has code to link up the parts
+                    but the most important work is done by the application.</p>
+                <div class="image ">
+                    <img src="imgs/img4.png" alt="">
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div style="display: flex; justify-content: space-between;" class="text">
+                    <h1 class="heading">5) DOM vs Virtual DOM </h1>
+                    <button onclick="btn5()" class="butn" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <h2>More <i class="fas fa-ellipsis-v"></i> </h2>
+                    </button>
+                </div>
+                <p class="para">The Virtual DOM is a light-weight abstraction of the DOM. You can think of it as a copy
+                    of the DOM, that can be updated without affecting the actual DOM. It has all the same properties as
+                    the real DOM object,
+                    but doesn't have the ability to write to the screen like the real DOM.</p>
+                <div class="image ">
+                    <img src="imgs/img5.jpg" alt="">
+                </div>
+            </div>
+            <div class="carousel-cell">
+                <div style="display: flex; justify-content: space-between;" class="text">
+                    <h1 class="heading">6)Uni Direction Vs 2 way Binding</h1>
+                    <button onclick="btn6()" class="butn" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <h2>More <i class="fas fa-ellipsis-v"></i> </h2>
+                    </button>
+                </div>
+                <p class="para">The Virtual DOM is a light-weight abstraction of the DOM. You can think of it as a copy
+                    of the DOM, that can be updated without affecting the actual DOM. It has all the same properties as
+                    the real DOM object,
+                    but doesn't have the ability to write to the screen like the real DOM.</p>
+                <div class="image ">
+                    <img src="imgs/img6.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Button trigger modal -->
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">React by JavaScript</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div id="modal" class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Alright</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class=" mt-16 text-gray-600 ">
+        <div class="container px-5 py-0 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+           <img src="imgs/pngaaa.com-2507875.png" width="60px" height="60px" alt="">
+            <span class="ml-3  text-l">React</span>
+          </a>
+          <p class="text-sm text-gray-500 mb-4 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2021 React-intro —by
+            <a href="https://www.facebook.com/syedmustafa026/" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@Mustafa</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a href="https://www.facebook.com/syedmustafa026/" class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/musta.fa._/" class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
+    <!-- bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!--flickitry JavaScript -->
+    <script src="Flickity/flickity.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
