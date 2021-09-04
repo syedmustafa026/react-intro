@@ -32,6 +32,7 @@ a {
     font-size: 30px;
     background-color: #61DBFB;
     width: 180px;
+    outline: none;
     height: 80px;
     margin-bottom: 40px;
 }
@@ -122,6 +123,7 @@ body {
     border-radius: 20px;
     font-size: 30px;
     width: 150px;
+    outline: none;
     height: 60px;
     margin-bottom: 40px;
 }
